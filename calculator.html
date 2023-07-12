@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #maincontainer {
+            border: 2px solid black;
+            left: 500px;
+            margin-top: 150px;
+            width: 380px;
+            height: 460px;
+            position: absolute;
+            background-color: grey;
+
+        }
+
+       #subcontainer{
+        position: absolute;
+        margin-top: 140px;
+        left: 10px;
+       }
+
+        button{
+            color: white;
+            font-size: 25px;
+            background-color: green;
+            box-shadow: 2px 2px 5px orange;
+            width: 80px;
+            height: 70px;
+            border-radius: 10px;
+            
+            /* margin-top: 100PX; */
+        }
+
+        #screen{
+            position: absolute;
+            left: 10px;
+            margin-top: 10px;
+            border: 3px solid black;
+            height: 60px;
+            width: 340px;
+            font-size: 30px;
+        }
+
+    </style>
+
+
+
+</head>
+
+<body>
+    <div id="maincontainer" >
+        <input id="screen" type="text" name="screen" id="screen">
+        <div id="subcontainer">
+        <table>
+            <tr>
+                <td><button onclick="calculate(1)">1</button> </td>
+                <td><button onclick="calculate(2)">2</button></td>
+                <td><button onclick="calculate(3)">3</button></td>
+                <td><button onclick="calculate(4)">4</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="calculate(5)">5</button></td>
+                <td><button onclick="calculate(6)">6</button></td>
+                <td><button onclick="calculate(7)">7</button></td>
+                <td><button onclick="calculate(8)">8</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="calculate(9)">9</button></td>
+                <td><button onclick="calculate(0)">0</button></td>
+                <td><button onclick="calculate(`+`)">+</button></td>
+                <td><button onclick="calculate(`-`)">-</button></td>
+              
+            </tr>
+            <tr>
+                <td><button onclick="calculate(`*`)">*</button></td>
+                <td><button onclick="calculate(`/`)">/</button></td>
+                <td><button onclick="total()">=</button></td>
+                <td><button onclick="clr()" >clr</button></td>
+                <td><button onclick="del()" >del</button></td>
+                
+            </tr>
+        </table>
+        </div>
+    </div>
+    <script src="/calculator.js"></script>
+</body>
+
+</html>
